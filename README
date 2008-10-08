@@ -1,3 +1,7 @@
-linky linky aims to provide tools to find URLs in text documents (including HTML), and to describe them (either by finding the titles of referenced HTML documents, or by finding metadata for other document types).
+linky linky aims to provide tools to find URLs in text documents
+(including HTML), and to describe them (either by finding the titles of
+referenced HTML documents, or by finding metadata for other document
+types).
 
-linky linky is inspired by Perl's URI::Find, URI::Find::Rule and URI::Title.
+linky linky is inspired by Perl's URI::Find, URI::Find::Rule and
+URI::Title.
