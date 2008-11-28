@@ -4,4 +4,4 @@ referenced HTML documents, or by finding metadata for other document
 types).
 
 linky linky is inspired by Perl's URI::Find, URI::Find::Rule and
-URI::Title.
+URI::Title modules.
