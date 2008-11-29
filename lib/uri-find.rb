@@ -2,7 +2,7 @@ require 'uri'
 require 'test/unit'
 
 def rule(text, schemes = nil)
-    schemes = schemes.to_a
+    schemes = schemes.nil? ? nil : schemes.to_a
     uris = []
     URI.extract(text, schemes) { |uri|
         u = URI.parse(uri.gsub(/^URL:/, '').gsub(/,$/, ''))
