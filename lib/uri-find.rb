@@ -29,7 +29,20 @@ a png that helps people to spell, #{png}, a cgi, #{cgi}, a page fragment,
 TEST_TEXT
     def test_http_scheme
         a = rule(@@text, 'http') 
-        assert_equal(a.size, 6, '6 http urls')
+        assert_equal(6, a.size, '6 http urls')
+        assert_equal('http://plig.net/', a[0])
+        assert_equal('http://frottage.org/', a[1])
+    end
+
+    def test_ftp_scheme
+        a = rule(@@text, 'ftp') 
+        assert_equal(1, a.size, '1 ftp url')
+        assert_equal('ftp://ftp.plig.org/', a[0])
+    end
+
+    def test_no_scheme
+        a = rule(@@text)
+        assert_equal(11, a.size, '11 urls')
     end
 end
 
